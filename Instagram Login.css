@@ -1,0 +1,78 @@
+body{
+background-color:white;
+}
+.instagram{
+color:black;
+font-size:45px;
+text-align:center;
+margin-top:60px;
+font-family:billabong;
+}
+input {
+    width: 85%;
+    height:23px;
+    border: 1px solid #ddd;
+    display:block;
+    border-radius: 5px;
+    outline:none;    
+    margin:auto;
+    font-size:15px;
+    padding:10px;
+    margin:auto;
+    display:block;
+}
+.join{
+position:relative;
+top:-45px;
+}
+.Eye{
+width:35px;
+height:35px;
+position:relative;
+top:-40px;
+left:300px;
+cursor:pointer;
+}
+button{
+background-color:#1569C7;
+border-radius: 8px;
+width:92%; 
+height:45px; 
+font-size:15px;
+margin-left:15px;
+text-align:center;
+}
+.forgot{
+color:#1569C7;
+text-decoration:none;
+margin-left:211px;
+}
+.or{
+text-align:center;
+margin-top:30px;
+margin-top:30px;
+}
+img{
+width:20px;
+height:20px;
+}
+.fblog{
+margin:auto;
+text-align:center;
+margin-top:30px;
+}
+.log{
+text-decoration:none;
+position:relative;
+top:-4.6px;
+color:#1569C7;
+}
+.signup{
+text-decoration:none;
+color:#1569C7;
+}
+.footer{
+margin-top:65px;
+text-align:center;
+font-size:15px;
+}

